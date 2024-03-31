@@ -6,25 +6,25 @@ class QuizController {
 
         if(animal == 'gato'){
             racas = {
-                siames: ['Ásia', 'Pequeno', 'Carinhoso', 'Guloso', 'Curto', '12-16 anos', 'Alto', 'Pelo curto e denso'],
-                persa: ['Irã', 'Médio', 'Calmo', 'Guloso', 'Longo', '10-15 anos', 'Médio', 'Pelo longo e sedoso'],
-                maine_coon: ['Estados Unidos', 'Grande', 'Amigável', 'Moderado', 'Longo', '10-13 anos', 'Alto', 'Pelo longo e denso'],
-                ragdoll: ['Estados Unidos', 'Médio', 'Dócil', 'Moderado', 'Longo', '12-17 anos', 'Médio', 'Pelo longo e sedoso'],
-                sphynx: ['Canadá', 'Médio', 'Afetuoso', 'Moderado', 'Sem pelo', '8-14 anos', 'Alto', 'Sem pelo'],
-                bengal: ['Índia', 'Médio', 'Ativo', 'Moderado', 'Curto', '10-15 anos', 'Alto', 'Pelo curto e macio'],
-                british_shorthair: ['Reino Unido', 'Médio', 'Independente', 'Moderado', 'Curto', '12-20 anos', 'Baixo', 'Pelo curto e denso'],
-                munchkin: ['Estados Unidos', 'Pequeno', 'Brincalhão', 'Moderado', 'Curto', '12-15 anos', 'Médio', 'Pelo curto e macio']
+                siames: ['Ásia', 'Pequeno', 'Carinhoso', 'Guloso', 'Curto', '12-16 anos', 'Pelo curto e denso'],
+                persa: ['Irã', 'Médio', 'Calmo', 'Guloso', 'Longo', '10-15 anos', 'Pelo longo e sedoso'],
+                maine_coon: ['Estados Unidos', 'Grande', 'Amigável', 'Moderado', 'Longo', '10-13 anos', 'Pelo longo e denso'],
+                ragdoll: ['Estados Unidos', 'Médio', 'Dócil', 'Moderado', 'Longo', '12-17 anos', 'Pelo longo e sedoso'],
+                sphynx: ['Canadá', 'Médio', 'Afetuoso', 'Moderado', 'Sem pelo', '8-14 anos','Sem pelo'],
+                bengal: ['Índia', 'Médio', 'Ativo', 'Moderado', 'Curto', '10-15 anos','Pelo curto e macio'],
+                british_shorthair: ['Reino Unido', 'Médio', 'Independente', 'Moderado', 'Curto', '12-20 anos', 'Pelo curto e denso'],
+                munchkin: ['Estados Unidos', 'Pequeno', 'Brincalhão', 'Moderado', 'Curto', '12-15 anos', 'Pelo curto e macio']
             };
         }else{
             racas = {
-                labrador:['África', 'Grande', 'Carinhoso', 'Guloso', 'Curto', '12-14 anos', 'Alto', 'Pelagem densa e curta'],
-                vira_lata: ['Brasil', 'Médio', 'Brincalhão', 'Atencioso', 'Variado', '12-15 anos', 'Médio', 'Varia de acordo com a mistura'],
-                chow_chow: ['Ásia', 'Médio', 'Calmo', 'Guloso', 'Longo', '9-15 anos', 'Médio', 'Pelo longo e denso'],
-                bulldog: ['Inglaterra', 'Pequeno', 'Teimoso', 'Guloso', 'Curto', '8-12 anos', 'Baixo', 'Pelo curto e liso'],
-                poodle: ['França', 'Pequeno', 'Inteligente', 'Guloso', 'Crespo', '10-18 anos', 'Alto', 'Pelo encaracolado e denso'],
-                husky_siberiano: ['Sibéria', 'Grande', 'Energético', 'Guloso', 'Longo', '12-15 anos', 'Alto', 'Pelo denso e duplo'],
-                golden_retriever: ['Escócia', 'Grande', 'Amigável', 'Guloso', 'Longo', '10-12 anos', 'Alto', 'Pelo longo e dourado'],
-                beagle: ['Inglaterra', 'Pequeno', 'Curioso', 'Guloso', 'Curto', '12-15 anos', 'Médio', 'Pelo curto e resistente']
+                labrador:['África', 'Grande', 'Carinhoso', 'Guloso', 'Curto', '12-14 anos', 'Pelagem densa e curta'],
+                vira_lata: ['Brasil', 'Médio', 'Brincalhão', 'Atencioso', 'Variado', '12-15 anos',  'Varia de acordo com a mistura'],
+                chow_chow: ['Ásia', 'Médio', 'Calmo', 'Guloso', 'Longo', '9-15 anos', 'Pelo longo e denso'],
+                bulldog: ['Inglaterra', 'Pequeno', 'Teimoso', 'Guloso', 'Curto', '8-12 anos', 'Pelo curto e liso'],
+                poodle: ['França', 'Pequeno', 'Inteligente', 'Guloso', 'Crespo', '10-18 anos', 'Pelo encaracolado e denso'],
+                husky_siberiano: ['Sibéria', 'Grande', 'Energético', 'Guloso', 'Longo', '12-15 anos', 'Pelo denso e duplo'],
+                golden_retriever: ['Escócia', 'Grande', 'Amigável', 'Guloso', 'Longo', '10-12 anos', 'Pelo longo e dourado'],
+                beagle: ['Inglaterra', 'Pequeno', 'Curioso', 'Guloso', 'Curto', '12-15 anos', 'Pelo curto e resistente']
             };            
         }
 
