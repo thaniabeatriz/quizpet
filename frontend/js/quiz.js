@@ -1,4 +1,3 @@
-// Definição das perguntas para cada tipo de quiz
 const perguntasGato = [
     {
         pergunta: "Se você pudesse viajar, para onde iria?",
@@ -75,19 +74,23 @@ const perguntasCachorro = [
     },
 ];
 
+
+let perguntas;
 let perguntaAtual = 0;
-let quizSelecionado = null;
+let respostas = [];
 
 function exibirPergunta() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const quizType = urlParams.get('quiz');
+
+    if (quizType === 'cachorro') {
+        perguntas = perguntasCachorro;
+    } else if (quizType === 'gato') {
+        perguntas = perguntasGato;
+    }
+
     const perguntaElement = document.getElementById("pergunta");
     const opcoesElement = document.getElementById("opcoes");
-
-    let perguntas;
-    if (quizSelecionado === 'gato') {
-        perguntas = perguntasGato;
-    } else if (quizSelecionado === 'cachorro') {
-        perguntas = perguntasCachorro;
-    }
 
     perguntaElement.textContent = perguntas[perguntaAtual].pergunta;
     opcoesElement.innerHTML = "";
@@ -106,11 +109,15 @@ function proximaPergunta() {
     const resposta = document.querySelector('input[name="resposta"]:checked');
 
     if (resposta) {
-        const perguntas = quizSelecionado === 'gato' ? perguntasGato : perguntasCachorro;
         perguntas[perguntaAtual].resposta = resposta.value;
+        respostas.push(perguntas[perguntaAtual].opcoes[resposta.value]);
+        console.log(respostas);
         perguntaAtual++;
         if (perguntaAtual < perguntas.length) {
             exibirPergunta();
+            if (perguntaAtual === perguntas.length - 1) {
+                document.querySelector('.botao-enviar').style.display = 'block';
+            }
         } else {
             alert("Quiz finalizado!");
         }
@@ -119,23 +126,8 @@ function proximaPergunta() {
     }
 }
 
+
 function verificarRespostas() {
 }
 
-// Função para selecionar o quiz
-function selecionarQuiz(tipo) {
-    quizSelecionado = tipo;
-    perguntaAtual = 0;
-    exibirPergunta();
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Adicionar eventos de clique nos cards para selecionar o quiz
-    document.getElementById('quiz-gato').addEventListener('click', function() {
-        selecionarQuiz('gato');
-    });
-
-    document.getElementById('quiz-cachorro').addEventListener('click', function() {
-        selecionarQuiz('cachorro');
-    });
-});
+exibirPergunta();

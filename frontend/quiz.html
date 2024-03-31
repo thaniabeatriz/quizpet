@@ -44,8 +44,6 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const quizType = urlParams.get('quiz');
-        
-        console.log(quizType);
         if (quizType === 'cachorro') {
             document.getElementById('subtitulo_header').textContent = 'Você escolheu o Quiz de Cachorro!';
             document.getElementById('pergunta-titulo').textContent = 'Vamos descobrir qual cachorro você é';
@@ -54,6 +52,5 @@
             document.getElementById('pergunta-titulo').textContent = 'Vamos descobrir qual gato você é';
         }
     </script>
-    
 </body>
 </html>
