@@ -1,26 +1,76 @@
 // Definição das perguntas para cada tipo de quiz
-const perguntasCachorro = [
+const perguntasGato = [
     {
-        pergunta: "Qual é a sua origem de cachorro?",
-        opcoes: ["Asiática", "Inglaterra", "Exemplo"],
+        pergunta: "Se você pudesse viajar, para onde iria?",
+        opcoes: ["Ásia", "Irã", "Estados Unidos", "Canadá", "Índia", "Reino Unido"],
         resposta: null
     },
     {
-        pergunta: "Qual é o tamanho ideal para você?",
+        pergunta: "Se você virasse um pet, qual seria o seu tamanho?",
         opcoes: ["Pequeno", "Médio", "Grande"],
+        resposta: null
+    },
+    {
+        pergunta: "Escolha uma das características:",
+        opcoes: ["Carinhoso", "Calmo", "Amigável", "Dócil", "Afetuoso", "Ativo", "Independente", "Brincalhão"],
+        resposta: null
+    },
+    {
+        pergunta: "Adicione mais uma característica:",
+        opcoes: ["Guloso", "Moderado"],
+        resposta: null
+    },
+    {
+        pergunta: "Escolha um tamanho de pelo:",
+        opcoes: ["Curto", "Longo", "Sem pelo"],
+        resposta: null
+    },
+    {
+        pergunta: "Escolha uma expectativa de vida:",
+        opcoes: ["12-16 anos", "10-15 anos", "10-13 anos", "12-17 anos", "8-14 anos", "10-15 anos", "12-20 anos", "12-15 anos"],
+        resposta: null
+    },
+    {
+        pergunta: "Escolha um tipo de pelo:",
+        opcoes: ["Pelo curto e denso", "Pelo curto e macio", "Pelo longo e sedoso", "Pelo longo e denso", "Sem pelo"],
         resposta: null
     },
 ];
 
-const perguntasGato = [
+const perguntasCachorro = [
     {
-        pergunta: "Qual é a sua origem de gato?",
-        opcoes: ["Asiática", "Inglaterra", "Exemplo"],
+        pergunta: "Se você pudesse viajar, para onde iria?",
+        opcoes: ["África", "Brasil", "Ásia", "Inglaterra", "França", "Sibéria", "Escócia"],
         resposta: null
     },
     {
-        pergunta: "Qual é o tamanho ideal para você?",
+        pergunta: "Se você virasse um pet, qual seria o seu tamanho?",
         opcoes: ["Pequeno", "Médio", "Grande"],
+        resposta: null
+    },
+    {
+        pergunta: "Escolha uma das características:",
+        opcoes: ["Carinhoso", "Brincalhão", "Calmo", "Teimoso", "Inteligente", "Energético", "Amigável", "Curioso"],
+        resposta: null
+    },
+    {
+        pergunta: "Adicione mais uma característica:",
+        opcoes: ["Guloso", "Atencioso"],
+        resposta: null
+    },
+    {
+        pergunta: "Escolha um tamanho de pelo:",
+        opcoes: ["Curto", "Longo", "Crespo", "Variado"],
+        resposta: null
+    },
+    {
+        pergunta: "Escolha uma expectativa de vida:",
+        opcoes: ["12-14 anos", "12-15 anos", "9-15 anos", "8-12 anos", "10-18 anos", "12-15 anos", "10-12 anos", "12-15 anos"],
+        resposta: null
+    },
+    {
+        pergunta: "Escolha um tipo de pelo:",
+        opcoes: ["Pelo curto e liso", "Pelo curto e resistente", "Pelo encaracolado e denso", "Pelo denso e duplo", "Pelo longo e dourado","Pelo longo e denso", "Pelagem densa e curta", "Varia de acordo com a mistura"],
         resposta: null
     },
 ];
