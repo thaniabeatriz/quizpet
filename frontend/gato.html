@@ -15,12 +15,20 @@
         <img src="/img/logo.png" alt="Logo do Quiz Pet." width="200" height="200"/>
         <div id="subtitulo_header">Você escolheu o Quiz de Gato!</div>
     </header>
-    <main>
-        <div id="pergunta"></div>
-        <div id="opcoes"></div>
-        <button onclick="proximaPergunta()">Próxima Pergunta</button>
-        <button onclick="verificarRespostas()">Enviar</button>
+    <main class="conteudo-pet">
+        <p id="pergunta-titulo">Vamos descobrir qual gato você é</p>
+        <div class="perguntas">
+            <div id="pergunta"></div>
+            <div id="opcoes"></div>
+            <div class="botoes">
+                <button class="botao-proxima" onclick="proximaPergunta()">Próxima Pergunta</button>
+                <button class="botao-enviar" onclick="verificarRespostas()">Enviar</button>
+            </div>
+        </div>  
     </main>
+    <div class="voltar">
+        <a id="voltar_inicio" href="index.html" >Clique aqui para voltar ao início</a>
+    </div>
     <footer>
         <div id="direitos">
             QuizPet - Por <a href="https://github.com/henriquesapa" target="_blank">Henrique</a> e
