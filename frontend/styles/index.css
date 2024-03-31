@@ -1,0 +1,114 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#subtitulo_header {
+    padding-top: 10px;
+    font-family: "Irish Grover", system-ui;
+    font-style: normal;
+    font-size: 30px;
+} 
+
+main {
+    justify-content: center;
+    width: auto;
+}
+
+.conteudo {
+    display: flex;
+    
+}
+
+/* CARD DO MEIO*/ 
+
+.card {
+    font-size: 24px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.nome-quiz{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-shadow: 0.1em 0.1em 0.1em rgb(160, 160, 160)
+}
+
+.titulo-jogar{
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #5B6473;
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 10px 20px;
+    justify-content: center;
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 200px;
+    text-decoration: none;
+}
+
+.titulo-jogar:hover {
+    background-color: #ffffff;
+    color: #5B6473;
+}
+
+/* RODAPÉ */ 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #48443D;
+    color: #FFFFFF;
+    padding: 24px;
+    text-align: center;
+}
+
+#direitos {
+    width: 100%;
+}
+
+#direitos a {
+    color: #FF946C;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .conteudo, .titulo-jogar {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 24px 20px 50px 20px; 
+    }
+
+    footer {
+        padding: 12px; 
+    }
+
+    main {
+        height: fit-content ;
+    }
+}
