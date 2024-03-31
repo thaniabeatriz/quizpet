@@ -13,10 +13,10 @@
 <body>
     <header>
         <img src="/img/logo.png" alt="Logo do Quiz Pet." width="200" height="200"/>
-        <div id="subtitulo_header">Você escolheu o Quiz de Cachorro!</div>
+        <div id="subtitulo_header"></div>
     </header>
     <main class="conteudo-pet">
-        <p id="pergunta-titulo">Vamos descobrir qual cachorro você é</p>
+        <p id="pergunta-titulo"></p>
         <div class="perguntas">
             <div id="pergunta"></div>
             <div id="opcoes"></div>
@@ -26,6 +26,7 @@
             </div>
         </div>  
     </main>
+    
     <div class="voltar">
         <a id="voltar_inicio" href="index.html" >Clique aqui para voltar ao início</a>
     </div>
@@ -40,5 +41,19 @@
         <p>Seu navegador não suporta scripts ou os scripts estão desativados. Algumas funcionalidades podem estar indisponíveis.</p>
     </noscript>
     <script src="js/quiz.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const quizType = urlParams.get('quiz');
+        
+        console.log(quizType);
+        if (quizType === 'cachorro') {
+            document.getElementById('subtitulo_header').textContent = 'Você escolheu o Quiz de Cachorro!';
+            document.getElementById('pergunta-titulo').textContent = 'Vamos descobrir qual cachorro você é';
+        } else if (quizType === 'gato') {
+            document.getElementById('subtitulo_header').textContent = 'Você escolheu o Quiz de Gato!';
+            document.getElementById('pergunta-titulo').textContent = 'Vamos descobrir qual gato você é';
+        }
+    </script>
+    
 </body>
 </html>
