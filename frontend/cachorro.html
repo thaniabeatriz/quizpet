@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
-        <title>QuizPet</title>
-        <meta name="description"
-              content="Jogo de quiz com temática pet. Jogue agora!"/>
-        <link rel="stylesheet" href="styles/index.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizPet</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <header>
+        <img src="/img/logo.png" alt="Logo do Quiz Pet." width="200" height="200"/>
+        <div id="subtitulo_header">Você escolheu o Quiz de Cachorro!</div>
+    </header>
+    <main class="conteudo-pet">
+        <p id="pergunta-titulo">Vamos descobrir qual cachorro você é</p>
+        <div class="perguntas">
+            <div id="pergunta"></div>
+            <div id="opcoes"></div>
+            <div class="botoes">
+                <button class="botao-proxima" onclick="proximaPergunta()">Próxima Pergunta</button>
+                <button class="botao-enviar" onclick="verificarRespostas()">Enviar</button>
+            </div>
+        </div>  
+    </main>
+    <div class="voltar">
+        <a id="voltar_inicio" href="index.html" >Clique aqui para voltar ao início</a>
+    </div>
+    <footer>
+        <div id="direitos">
+            QuizPet - Por <a href="https://github.com/henriquesapa" target="_blank">Henrique</a> e
+            <a href="https://github.com/thaniabeatriz" target="_blank">Thânia Beatriz</a> - 2024
+        </div>                
+    </footer>  
 
-    </head>
-        <body>
-
-            <header>
-                <img src="/img/logo.png"
-                    alt="Logo do Quiz Pet."
-                    width="200" height="200"/>
-                <div id="subtitulo_header">Você escolheu o Quiz de Cachorro!</div>
-            </header>
-
-            <main>
-            </main>
-
-            <footer>
-                <div id="direitos">
-                    QuizPet - Por <a href="https://github.com/henriquesapa" target="_blank">Henrique</a> e
-                    <a href="https://github.com/thaniabeatriz" target="_blank">Thânia Beatriz</a> - 2024
-                </div>                
-            </footer>  
-
-            <noscript>
-                <p>Seu navegador não suporta scripts ou os scripts estão desativados. Algumas funcionalidades podem estar indisponíveis.</p>
-            </noscript>
-        </body>
+    <noscript>
+        <p>Seu navegador não suporta scripts ou os scripts estão desativados. Algumas funcionalidades podem estar indisponíveis.</p>
+    </noscript>
+    <script src="js/quiz.js"></script>
+</body>
 </html>
