@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon backend/server.js && npx http-server frontend -p 3000",
+    "start": "nodemon backend/server.js & npx http-server frontend -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
